@@ -6,7 +6,7 @@
 
   $dbhost = 'localhost';
   $dbuser = 'team18';
-    $dbpass = 'team_18';
+    $dbpass = 'our_password';
     $dbname = 'team18';
 
 	  require_once( 'DB.php' );
