@@ -44,7 +44,7 @@ def check_login():
 			footer()
 			
 		elif userexists(form["login"].value) and correctpass(form["login"].value, form["password"].value):
-			homeaftrlogin.page(True)
+			homeaftrlogin.page(True, form["login"].value)
 
 		elif form.has_key("login") and not userexists(form["login"].value):
 			form1()

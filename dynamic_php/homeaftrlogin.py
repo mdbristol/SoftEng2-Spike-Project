@@ -1,9 +1,9 @@
 #!/usr/bin/python 
 
 import cgi
+import MySQLdb
 
-
-def page(logged):
+def page(logged, usr):
 	if logged:
 		print """
 		<HTML>
@@ -14,15 +14,17 @@ def page(logged):
 		<FONT SIZE="1"> Image from attendconference.com </font>
 		</CENTER>
 		<br /><br /><br />
-		</BODY>
-		</HTML>
-		"""
-	if not logged:
-		print """
-		<HTML>
-		<HEAD><TITLE>Home</TITLE></HEAD>
-		<BODY>
-		NOT LOGGED IN
+		Upload an Image:
+		<br />
+		<form enctype="multipart/form-data" method="POST" action="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=upload.py">
+		<p>File: <input type="file" name="file"</p>
+		<p>Caption: <input type="text" name="caption" SIZE ="12"></p>
+		<p>Album: <input type="text" name="album" SIZE ="12"></p>
+		<input type="hidden" name="name" value= "
+		""" + usr + """
+		" SIZE ="12">
+		<p><input type="submit" value="Connect"></p>
+		</form>	
 		</BODY>
 		</HTML>
 		"""
