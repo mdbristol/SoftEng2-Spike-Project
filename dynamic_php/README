@@ -1,0 +1,25 @@
+This is a web program that is supposed to support 
+1. User Registration
+2. User Login
+3. Image Uploading
+4. Image Viewing
+
+I am writing this for my Software Engineering 2 course at Radford University
+
+This program is currently vulnerable to most types of attack, including
+-SQL injection
+-DDOS
+-XSS
+
+Currently I have completed
+1. User Registration
+2. User Login
+3. Image Uploading
+
+I hope to complete
+1. Image Viewing
+2. Image Removal
+3. Sanitation of inputs
+4. Cookie-based authorization 
+5. Image Viewing based on Album
+6. User Deletion
