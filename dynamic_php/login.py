@@ -61,6 +61,7 @@ def form1():
 		<HTML>
 		<HEAD><TITLE>Login Page</TITLE></HEAD>
 		<BODY>
+		<a href="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=home.py"> <-Back to Home </a>
 		<FORM method="POST" action="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=login.py">
 		<P><FONT SIZE="5" COLOR = "#990000"> Spike Project Login</font><br />
 		<TABLE BOREDER="0" WIDTH="271">

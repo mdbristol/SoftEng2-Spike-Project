@@ -12,19 +12,19 @@ def page(logged, usr):
 		<CENTER><FONT SIZE="5" COLOR="#990000">Home Page</FONT><br />
 		<img src="http://www.attendconference.com/blog/wp-content/uploads/2011/02/python-icon.jpg">
 		<FONT SIZE="1"> Image from attendconference.com </font>
-		</CENTER>
 		<br /><br /><br />
-		Upload an Image:
-		<br />
-		<form enctype="multipart/form-data" method="POST" action="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=upload.py">
-		<p>File: <input type="file" name="file"</p>
-		<p>Caption: <input type="text" name="caption" SIZE ="12"></p>
-		<p>Album: <input type="text" name="album" SIZE ="12"></p>
-		<input type="hidden" name="name" value= "
+		<form Method="POST" action="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=uploadform.py">
+		<input type="submit" value="Upload a picture" />
+		<input type="hidden" name="user" value= "
 		""" + usr + """
 		" SIZE ="12">
-		<p><input type="submit" value="Connect"></p>
-		</form>	
+		</form>
+		<form Method="POST" action="http://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=home.py">
+		<input type="submit" value="Log Out" />
+		</form>
+		</CENTER>
 		</BODY>
 		</HTML>
 		"""
+	
+

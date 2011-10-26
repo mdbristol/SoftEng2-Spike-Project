@@ -58,9 +58,9 @@ def regform():
 		<HTML>
 		<HEAD><TITLE>Registration Page</TITLE></HEAD>
 		<BODY>
-		<a href="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=login.py"> <-Back to Login </a>
+		<a href="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=home.py"> <-Back to Home </a>
 		<FORM method="POST" action="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=register.py">
-		<P><FONT SIZE="5" COLOR = "#990000"> Spike Project Login</FONT><br />
+		<P><FONT SIZE="5" COLOR = "#990000"> Spike Project Registration</FONT><br />
 		<TABLE BOREDER="0" WIDTH="271">
 		<TR>
 		<TD WIDTH ="48%">
