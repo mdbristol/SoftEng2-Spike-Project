@@ -15,11 +15,11 @@ Currently I have completed
 1. User Registration
 2. User Login
 3. Image Uploading
+4. Image Viewing
+5. Image Viewing based on Album
 
 I hope to complete
-1. Image Viewing
-2. Image Removal
-3. Sanitation of inputs
-4. Cookie-based authorization 
-5. Image Viewing based on Album
-6. User Deletion
+1. Image Removal
+2. Sanitation of inputs
+3. Cookie-based authorization 
+4. User Deletion
