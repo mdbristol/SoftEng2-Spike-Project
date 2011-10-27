@@ -19,6 +19,12 @@ def page(logged, usr):
 		""" + usr + """
 		" SIZE ="12">
 		</form>
+		<form Method="POST" action="https://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=viewAlbums.py">
+		<input type="submit" value="View Albums" />
+		<input type="hidden" name="user" value= "
+		""" + usr + """
+		" SIZE ="12">
+		</form>
 		<form Method="POST" action="http://php.radford.edu/cgi-bin/cgiwrap?user=gottman&script=home.py">
 		<input type="submit" value="Log Out" />
 		</form>

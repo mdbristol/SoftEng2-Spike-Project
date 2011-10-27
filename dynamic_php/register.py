@@ -19,7 +19,7 @@ def userexists(usr):
 def adduser(usr, pas):
 	db = MySQLdb.connect(host="php.radford.edu",user="gottman",passwd="spike123",db="gottman", port=3306 )
 	cursor = db.cursor()
-	q1 = """INSERT INTO USERS VALUES('""" + usr + """','""" + pas + """')"""
+	q1 = """INSERT INTO USERS VALUES('""" + usr.strip() + """','""" + pas.strip() + """')"""
 	q2 = """commit"""
 	cursor.execute(q1)
 	cursor.execute(q2)

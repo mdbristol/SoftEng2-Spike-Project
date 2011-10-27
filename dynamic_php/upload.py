@@ -35,7 +35,7 @@ if form.has_key("name") and form.has_key("caption") and form.has_key("album") an
 
 	db = MySQLdb.connect(host="php.radford.edu",user="gottman",passwd="spike123",db="gottman", port=3306 )
 	cursor = db.cursor()
-	q1 = "insert into images values( 'https://php.radford.edu/~gottman/tmp/" + form["album"].value + "/" + fn  + "','" + form["caption"].value + "','" + form["album"].value + "','" + form["name"].value + "')"
+	q1 = "insert into images values( 'https://php.radford.edu/~gottman/tmp/" + form["album"].value.strip() + "/" + fn  + "','" + form["caption"].value.strip() + "','" + form["album"].value.strip() + "','" + form["name"].value.strip() + "')"
 	q2 = "commit"	
 	try:
 		cursor.execute(q1)
