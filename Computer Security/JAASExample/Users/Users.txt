@@ -1,0 +1,3 @@
+4039, Alice, Associate, Bob (4012), $100000, 64489c85dc2fe0787b85cd87214b3810
+4044, Tim, Associate, Bob (4012), $30000, dc2054afd537ddc98afd9347136494ac
+4014, Mary, Manager, Self, $10000, dc2054afd537ddc98afd9347136494ac
