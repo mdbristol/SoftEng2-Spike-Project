@@ -1,3 +1,0 @@
-JAASExample {
-	ExamplePackage.LoginModuleExample required debug=false; 
-};
